@@ -29,4 +29,15 @@ class Config:
     # 调试模式
     DEBUG = os.getenv("NSI_DEBUG", "false").lower() == "true"
 
+    # 是否启用远程模式（true: 通过 SSH 执行命令到远程主机；false: 本地执行）
+    REMOTE_MODE = os.getenv("NSI_REMOTE_MODE", "true").lower() == "true"
+    
+    # 远程主机连接信息
+    SSH_HOST = os.getenv("NSI_SSH_HOST", "192.168.1.10")
+    SSH_PORT = int(os.getenv("NSI_SSH_PORT", 22))
+    SSH_USERNAME = os.getenv("NSI_SSH_USERNAME", "root")
+    SSH_PASSWORD = os.getenv("NSI_SSH_PASSWORD", "")          # 密码或密钥二选一
+    SSH_KEY_FILE = os.getenv("NSI_SSH_KEY_FILE", "")          # 私钥文件路径（如 ~/.ssh/id_rsa）
+    SSH_CONNECT_TIMEOUT = int(os.getenv("NSI_SSH_TIMEOUT", 10))  # 连接超时（秒）
+
 config = Config()
