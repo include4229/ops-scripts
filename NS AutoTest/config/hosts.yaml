@@ -1,0 +1,18 @@
+# 多主机环境配置（可选）
+# 用于多台凝思系统测试环境的参数配置
+hosts:
+  - name: "nsi-node-1"
+    ip: "192.168.1.10"
+    username: "root"
+    password: "your_password"
+    arch: "x86_64"
+  - name: "nsi-node-2"
+    ip: "192.168.1.11"
+    username: "root"
+    password: "your_password"
+    arch: "aarch64"
+
+# 全局测试参数
+global:
+  cmd_timeout: 60
+  test_timeout: 300
