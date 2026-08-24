@@ -1,0 +1,18 @@
+{
+  "network_interfaces": ["eth0", "eth1"],
+  "test_hosts": [
+    {
+      "host": "192.168.1.1",
+      "description": "网关"
+    },
+    {
+      "host": "www.baidu.com",
+      "description": "外网"
+    },
+    {
+      "host": "8.8.8.8",
+      "description": "DNS服务器"
+    }
+  ],
+  "ports_to_test": [22, 80, 443]
+}
