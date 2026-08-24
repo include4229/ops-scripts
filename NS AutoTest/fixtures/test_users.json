@@ -1,0 +1,26 @@
+{
+  "test_users": [
+    {
+      "username": "testuser1",
+      "password": "Test123!",
+      "role": "normal"
+    },
+    {
+      "username": "testadmin",
+      "password": "Admin456!",
+      "role": "admin"
+    }
+  ],
+  "invalid_users": [
+    {
+      "username": "",
+      "password": "",
+      "expected_error": "用户名不能为空"
+    },
+    {
+      "username": "test",
+      "password": "123",
+      "expected_error": "密码长度不足"
+    }
+  ]
+}
