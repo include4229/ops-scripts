@@ -1,0 +1,22 @@
+[project]
+name = "nsi-autotest"
+version = "0.1.0"
+description = "凝思系统自动化测试项目"
+authors = [{name = "Your Name", email = "your.email@example.com"}]
+license = {text = "MIT"}
+readme = "README.md"
+requires-python = ">=3.8"
+dependencies = [
+    "pytest>=7.0.0",
+    "pytest-html>=3.0.0",
+    "pyyaml>=6.0",
+]
+
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[tool.pytest.ini_options]
+minversion = "7.0"
+testpaths = ["testcases"]
+addopts = "-v --tb=short --strict-markers"
