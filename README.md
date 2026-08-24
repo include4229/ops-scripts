@@ -1,7 +1,10 @@
 项目结构说明
+
+
+
 | 文件路径 | 说明 |
 | :--- | :--- |
-| **config/** | |
+| **config/** | **配置** |
 | `NS-AutoTest/config/__init__.py` | 包标识文件 |
 | `NS-AutoTest/config/settings.py` | 全局配置（IP、路径、超时等） |
 | `NS-AutoTest/config/hosts.yaml` | 多主机环境配置（可选） |
